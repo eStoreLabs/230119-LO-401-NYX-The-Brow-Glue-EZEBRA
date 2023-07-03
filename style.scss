@@ -414,7 +414,6 @@ body {
         }
 
         &__feature--txt {
-            
             &--1:after {
                 content: url("./img/arrow-1.png");
                 display: block;
@@ -423,6 +422,7 @@ body {
                 top: 89%;
                 transform: translate(-50%, -50%);
             }
+
             &--2:after {
                 content: url("./img/arrow-2.png");
                 display: block;
@@ -430,6 +430,61 @@ body {
                 left: 14%;
                 top: 131%;
                 transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    @media (min-width: 500px) {
+        .es-features {
+            min-height: 600px;
+
+            &__featureCtn {
+                flex-direction: row;
+                align-items: flex-end;
+                justify-content: space-around;
+            }
+
+            &__feature--txt {
+                &--1 {
+                    transform: rotate(-5deg);
+
+                    &:after {
+                        left: 30%;
+                        top: 231%;
+                    }
+                }
+
+                &--2 {
+                    transform: rotate(5deg);
+
+                    &:after {
+                        left: -5%;
+                        top: 285%;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 850px) {
+        .es-features {
+            min-height: 700px;
+
+            &__ribbonCtn {
+                width: 367px;
+                height: 62px;
+
+                
+            }
+&__ribbon--txt {
+                    font-size: 2rem;
+                }
+            &__header {
+                font-size: 2.5rem;
+            }
+
+            &__featureCtn {
+                font-size: 2rem;
             }
         }
     }
