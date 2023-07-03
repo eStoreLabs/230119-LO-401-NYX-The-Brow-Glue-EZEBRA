@@ -389,43 +389,22 @@ body {
   }
 }
 .es-rc #es-rc-content .es-cross {
-  padding: 20px;
+  padding: 1rem;
   background: rgb(147, 204, 231);
   background: radial-gradient(circle, rgb(147, 204, 231) 0%, rgb(71, 169, 214) 100%);
-}
-.es-rc #es-rc-content .es-cross__upperCtn {
-  position: relative;
-}
-.es-rc #es-rc-content .es-cross__upperCtn::after {
-  content: url(./img/arrow-4.png);
-  position: absolute;
-  left: 300px;
-  bottom: -80px;
-  display: none;
-}
-.es-rc #es-rc-content .es-cross__title {
-  margin-left: 0px;
-  color: #fff;
-  font-family: "Water Brush", cursive;
-  font-size: 55px;
-  font-weight: 400;
-  text-shadow: 6px 0px 10px #000;
-}
-.es-rc #es-rc-content .es-cross__title--1 {
-  margin-left: 50px;
-}
-.es-rc #es-rc-content .es-cross__title--2 {
-  margin-left: 100px;
 }
 .es-rc #es-rc-content .es-cross__productsCtn {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-end;
+  font-family: "Montserrat", sans-serif;
 }
 .es-rc #es-rc-content .es-cross__single {
   max-width: 200px;
   margin: 10px;
+  display: grid;
+  grid-template-rows: 350px 60px 200px 40px;
 }
 .es-rc #es-rc-content .es-cross__imgCtn {
   padding: 20px;
@@ -433,6 +412,7 @@ body {
 .es-rc #es-rc-content .es-cross__img {
   margin: 0 auto;
   display: block;
+  height: 100%;
 }
 .es-rc #es-rc-content .es-cross__nameCtn {
   background-color: #000;
@@ -447,6 +427,7 @@ body {
   color: #fff;
   text-transform: uppercase;
   text-align: center;
+  font-weight: 900;
 }
 .es-rc #es-rc-content .es-cross__descCtn {
   padding: 10px 0;
@@ -461,6 +442,7 @@ body {
 .es-rc #es-rc-content .es-cross__link {
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: 900;
   color: #fff;
   text-align: center;
   background-color: #e0219a;
@@ -477,12 +459,13 @@ body {
 }
 .es-rc #es-rc-content .es-footer {
   width: 100%;
-  background-color: #000;
+  background-color: #2659a5;
   padding: 20px;
 }
 .es-rc #es-rc-content .es-footer__logo {
   margin: 0 auto;
   display: block;
+  max-width: 200px;
 }
 
 @media (min-width: 790px) {
@@ -514,8 +497,7 @@ body {
   .es-rc #es-rc-content .es-cross__productsCtn {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: space-around;
   }
   .es-rc #es-rc-content .es-cross__single {
     max-width: 200px;

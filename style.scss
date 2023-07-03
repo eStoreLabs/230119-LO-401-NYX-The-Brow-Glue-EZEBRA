@@ -412,7 +412,6 @@ body {
             margin-top: 2rem;
             position: relative;
         }
-
         &__feature--txt {
             &--1:after {
                 content: url("./img/arrow-1.png");
@@ -422,7 +421,6 @@ body {
                 top: 89%;
                 transform: translate(-50%, -50%);
             }
-
             &--2:after {
                 content: url("./img/arrow-2.png");
                 display: block;
@@ -437,23 +435,19 @@ body {
     @media (min-width: 500px) {
         .es-features {
             min-height: 600px;
-
             &__featureCtn {
                 flex-direction: row;
                 align-items: flex-end;
                 justify-content: space-around;
             }
-
             &__feature--txt {
                 &--1 {
                     transform: rotate(-5deg);
-
                     &:after {
                         left: 30%;
                         top: 231%;
                     }
                 }
-
                 &--2 {
                     transform: rotate(5deg);
 
@@ -465,24 +459,19 @@ body {
             }
         }
     }
-
     @media (min-width: 850px) {
         .es-features {
             min-height: 700px;
-
             &__ribbonCtn {
                 width: 367px;
                 height: 62px;
-
-                
             }
-&__ribbon--txt {
-                    font-size: 2rem;
-                }
+            &__ribbon--txt {
+                font-size: 2rem;
+            }
             &__header {
                 font-size: 2.5rem;
             }
-
             &__featureCtn {
                 font-size: 2rem;
             }
@@ -490,58 +479,39 @@ body {
     }
 
     .es-cross {
-        padding: 20px;
+        padding: 1rem;
         background: rgb(147, 204, 231);
         background: radial-gradient(circle, rgba(147, 204, 231, 1) 0%, rgba(71, 169, 214, 1) 100%);
 
         &__upperCtn {
-            position: relative;
-
-            &::after {
-                content: url(./img/arrow-4.png);
-                position: absolute;
-                left: 300px;
-                bottom: -80px;
-                display: none;
-            }
+            
         }
 
-        &__title {
-            margin-left: 0px;
-            color: #fff;
-            font-family: 'Water Brush', cursive;
-            font-size: 55px;
-            font-weight: 400;
-            text-shadow: 6px 0px 10px #000;
-
-            &--1 {
-                margin-left: 50px;
-            }
-
-            &--2 {
-                margin-left: 100px;
-            }
-        }
-
+        
         &__productsCtn {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: flex-end;
+            font-family: 'Montserrat', sans-serif;
         }
 
         &__single {
             max-width: 200px;
             margin: 10px;
+            display: grid;
+            grid-template-rows: 350px 60px 200px 40px;
         }
 
         &__imgCtn {
             padding: 20px;
+
         }
 
         &__img {
             margin: 0 auto;
             display: block;
+            height: 100%;
         }
 
         &__nameCtn {
@@ -558,6 +528,7 @@ body {
             color: #fff;
             text-transform: uppercase;
             text-align: center;
+            font-weight: 900;
         }
 
         &__descCtn {
@@ -575,6 +546,7 @@ body {
         &__link {
             text-decoration: none;
             text-transform: uppercase;
+            font-weight: 900;
             color: #fff;
             text-align: center;
             background-color: #e0219a;
@@ -594,12 +566,13 @@ body {
 
     .es-footer {
         width: 100%;
-        background-color: #000;
+        background-color: $es-blue;
         padding: 20px;
 
         &__logo {
             margin: 0 auto;
             display: block;
+            max-width: 200px;
         }
     }
 
@@ -644,8 +617,7 @@ body {
             &__productsCtn {
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: center;
-                align-items: flex-end;
+                justify-content: space-around;
             }
 
             &__single {
