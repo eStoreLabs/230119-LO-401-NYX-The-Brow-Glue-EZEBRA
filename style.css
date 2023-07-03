@@ -71,7 +71,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  padding: 2rem;
+  padding: 1rem;
 }
 .es-rc #es-rc-content .es-logo__left {
   max-width: 80%;
@@ -99,214 +99,74 @@ body {
     max-width: 40%;
   }
 }
-.es-rc #es-rc-content .es-info {
-  min-height: 650px;
-  background-image: url(./img/info-bg.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 2;
-  position: relative;
+.es-rc #es-rc-content .es-formula-shades {
+  background: rgb(37, 86, 164);
+  background: linear-gradient(66deg, rgb(37, 86, 164) 0%, rgb(74, 166, 209) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2556a4", endColorstr="#4aa6d1", GradientType=1);
 }
-.es-rc #es-rc-content .es-info__ctn {
-  max-width: 300px;
-  background-color: #000;
-  color: #fff;
-}
-.es-rc #es-rc-content .es-info__ctnList {
-  margin: 20px;
-  padding: 40px;
-}
-.es-rc #es-rc-content .es-info__listItem {
-  margin: 20px 0;
-  list-style: none;
-  position: relative;
-}
-.es-rc #es-rc-content .es-info__listItem::before {
-  content: url(./img/tick.png);
-  position: absolute;
-  left: -50px;
-}
-.es-rc #es-rc-content .es-ingr {
-  margin-top: -350px;
-  min-height: 400px;
-  z-index: 1;
-  position: relative;
-  background-color: #d1113f;
-}
-.es-rc #es-rc-content .es-ingr__ctn {
-  position: absolute;
-  z-index: 2;
-  bottom: 16%;
-  right: 10%;
-}
-.es-rc #es-rc-content .es-ingr__text {
-  color: #fff;
-  font-family: "Water Brush", cursive;
-  font-size: 20px;
-  font-weight: 400;
-}
-.es-rc #es-rc-content .es-shades {
-  margin-top: -50px;
-  z-index: 2;
-  position: relative;
-}
-.es-rc #es-rc-content .es-shades__ctn {
+.es-rc #es-rc-content .es-formula {
+  padding: 1rem;
+  padding-right: 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  flex-direction: column;
+  gap: 2rem;
 }
-.es-rc #es-rc-content .es-shades__ctn--0 {
-  background: #000;
-  min-height: 200px;
-  -webkit-clip-path: none;
-          clip-path: none;
+.es-rc #es-rc-content .es-formula__header {
+  font-size: 2.5rem;
 }
-.es-rc #es-rc-content .es-shades__ctn--1 {
-  background: transparent;
-  margin-top: -18px;
+.es-rc #es-rc-content .es-formula--left__img {
+  padding-right: 1rem;
 }
-.es-rc #es-rc-content .es-shades__ctn--2 {
-  background: transparent;
-  margin-top: -4px;
-}
-.es-rc #es-rc-content .es-shades__ctn--3 {
-  background: transparent;
-  margin-top: -4px;
-}
-.es-rc #es-rc-content .es-shades__ctn--4 {
-  background: transparent;
-  margin-top: -4px;
-}
-.es-rc #es-rc-content .es-shades__mainText {
-  position: absolute;
-  bottom: 0px;
-  right: 80px;
-}
-.es-rc #es-rc-content .es-shades__title {
-  font-family: "Water Brush", cursive;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  font-size: 50px;
-  font-weight: 400;
-  color: #fff;
-  position: relative;
-}
-.es-rc #es-rc-content .es-shades__title span {
-  margin-left: 70px;
-}
-.es-rc #es-rc-content .es-shades__title::before {
-  content: url(./img/arrow-5.png);
-  position: absolute;
-  left: -120px;
-  bottom: -100px;
-  display: none;
-}
-.es-rc #es-rc-content .es-shades__single {
-  width: 120px;
-  margin: 0;
-  height: 335px;
-}
-.es-rc #es-rc-content .es-shades__single--0 {
-  display: none;
-}
-.es-rc #es-rc-content .es-shades__prdctCtn--onesieFunsie {
-  background-color: #af5173;
-}
-.es-rc #es-rc-content .es-shades__prdctCtn--threadCount {
-  background-color: #78504e;
-}
-.es-rc #es-rc-content .es-shades__prdctCtn--feelings {
-  background-color: #00303c;
-}
-.es-rc #es-rc-content .es-shades__prdctCtn--chocolateMousse {
-  background-color: #751b34;
-}
-.es-rc #es-rc-content .es-shades__prdctCtn--velvetRobe {
-  background-color: #962b35;
-}
-.es-rc #es-rc-content .es-shades__prdctCtn--cherryCreme {
-  background-color: #c80c2f;
-}
-.es-rc #es-rc-content .es-shades__prdctCtn--icingOnTop {
-  background-color: #f20d22;
-}
-.es-rc #es-rc-content .es-shades__prdctCtn--berryBedSheets {
-  background-color: #64214c;
-}
-.es-rc #es-rc-content .es-shades__prdctCtn--pillowFight {
-  background-color: #f4065b;
-}
-.es-rc #es-rc-content .es-shades__prdctCtn--bdayFrosting {
-  background-color: #ab1368;
-}
-.es-rc #es-rc-content .es-shades__prdctCtn--fuzzySlippers {
-  background-color: #892a4a;
-}
-.es-rc #es-rc-content .es-shades__prdctCtn--pushinCushion {
-  background-color: #a74f45;
-}
-.es-rc #es-rc-content .es-shades__prdctCtn--fauxFur {
-  background-color: #985948;
-}
-.es-rc #es-rc-content .es-shades__prdctCtn--parfait {
-  background-color: #a34140;
-}
-.es-rc #es-rc-content .es-shades__prdctCtn--teddyFluff {
-  background-color: #9e5a4f;
-}
-.es-rc #es-rc-content .es-shades__prdctCtn--latteFoam {
-  background-color: #8e4743;
-}
-.es-rc #es-rc-content .es-shades__prdctCtn--kittyBelly {
-  background-color: #aa584d;
-}
-.es-rc #es-rc-content .es-shades__prdctCtn--pancakeStacks {
-  background-color: #a26d5f;
-}
-.es-rc #es-rc-content .es-shades__prdctCtn--memoryFoam {
-  background-color: #81554a;
-}
-.es-rc #es-rc-content .es-shades__prdctCtn--laundryDay {
-  background-color: #b6736a;
-}
-.es-rc #es-rc-content .es-shades__prdctCtn--cheeks {
-  background-color: #c97c72;
-}
-.es-rc #es-rc-content .es-shades__prdctCtn--blankie {
-  background-color: #47a9d6;
-}
-.es-rc #es-rc-content .es-shades__prdctCtn--pomPom {
-  background-color: #d34098;
-}
-.es-rc #es-rc-content .es-shades__prdctCtn--snuggleSesh {
-  background-color: #ae5c8c;
-}
-.es-rc #es-rc-content .es-shades__prdct {
+.es-rc #es-rc-content .es-formula__logo {
+  max-width: 150px;
   display: block;
-  margin: 0px auto;
-  padding: 10px;
+  margin: auto;
+  position: relative;
 }
-.es-rc #es-rc-content .es-shades__nameCtn {
-  background-color: #000;
-  margin: 0;
+.es-rc #es-rc-content .es-formula__star--1 {
+  display: block;
+  margin: -10px 2rem 0 auto;
+  max-width: 20px;
 }
-.es-rc #es-rc-content .es-shades__name {
-  color: #fff;
-  margin: 0;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 5px 10px;
-  font-size: 8px;
+.es-rc #es-rc-content .es-formula__star--2 {
+  display: block;
+  max-width: 20px;
+  margin: 0 auto 0 2rem;
 }
-.es-rc #es-rc-content .es-shades__lipCtn {
-  margin: 0;
-  padding: 0;
+.es-rc #es-rc-content .es-formula__star--3 {
+  display: block;
+  max-width: 30px;
+  margin: -4rem 4rem 0 auto;
 }
-.es-rc #es-rc-content .es-shades__lipImg {
-  margin: 0;
-  padding: 0;
+@media (min-width: 500px) {
+  .es-rc #es-rc-content .es-formula {
+    flex-direction: row;
+    align-content: space-between;
+    gap: unset;
+    padding-top: 0;
+  }
+  .es-rc #es-rc-content .es-formula--left__img {
+    display: block;
+    margin-left: auto;
+    margin-right: -3rem;
+  }
+  .es-rc #es-rc-content .es-formula__logo {
+    max-width: 40%;
+  }
+  .es-rc #es-rc-content .es-formula__star--2 {
+    margin: 1rem 8rem 0 auto;
+  }
+  .es-rc #es-rc-content .es-formula__star--3 {
+    max-width: 40px;
+  }
+  .es-rc #es-rc-content .es-formula--right {
+    max-width: 50%;
+  }
+}
+@media (min-width: 700px) {
+  .es-rc #es-rc-content .es-formula__header {
+    font-size: 3.5rem;
+  }
 }
 .es-rc #es-rc-content .es-cross {
   padding: 20px;
@@ -406,150 +266,6 @@ body {
 }
 
 @media (min-width: 790px) {
-  .es-rc #es-rc-content .es-info {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 30px;
-  }
-  .es-rc #es-rc-content .es-info__ctn {
-    max-width: 580px;
-  }
-  .es-rc #es-rc-content .es-info__ctnList {
-    margin: 20px;
-    padding: 20px 60px;
-  }
-  .es-rc #es-rc-content .es-info__listItem {
-    margin: 20px 0;
-    list-style: none;
-    position: relative;
-  }
-  .es-rc #es-rc-content .es-info__listItem::before {
-    content: url(./img/tick.png);
-    position: absolute;
-    left: -50px;
-    top: -20px;
-  }
-  .es-rc #es-rc-content .es-ingr {
-    margin-top: -600px;
-    min-height: 800px;
-    z-index: 1;
-  }
-  .es-rc #es-rc-content .es-ingr__ctn {
-    position: absolute;
-    z-index: 2;
-    bottom: 25%;
-    right: 15%;
-  }
-  .es-rc #es-rc-content .es-ingr__text {
-    color: #fff;
-    font-family: "Water Brush", cursive;
-    font-size: 45px;
-    font-weight: 400;
-    position: relative;
-  }
-  .es-rc #es-rc-content .es-ingr__text--1::before {
-    content: "";
-    background-image: url(./img/arrow-1.png);
-    background-size: 160px 90px;
-    width: 160px;
-    height: 90px;
-    position: absolute;
-    left: -190px;
-    bottom: -60px;
-    filter: invert(1);
-  }
-  .es-rc #es-rc-content .es-ingr__text--2::before {
-    content: "";
-    background-image: url(./img/arrow-2.png);
-    background-size: 100px 50px;
-    width: 100px;
-    height: 50px;
-    position: absolute;
-    left: -120px;
-    bottom: -20px;
-    filter: invert(1);
-  }
-  .es-rc #es-rc-content .es-ingr__text--3::before {
-    content: "";
-    background-image: url(./img/arrow-3.png);
-    background-size: 100px 60px;
-    width: 100px;
-    height: 60px;
-    position: absolute;
-    left: -100px;
-    bottom: -60px;
-    filter: invert(1);
-  }
-  .es-rc #es-rc-content .es-shades {
-    margin-top: -250px;
-  }
-  .es-rc #es-rc-content .es-shades__mainText {
-    position: absolute;
-    bottom: 50px;
-    right: 100px;
-  }
-  .es-rc #es-rc-content .es-shades__title {
-    font-family: "Water Brush", cursive;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    font-size: 50px;
-    font-weight: 400;
-    color: #fff;
-    position: relative;
-  }
-  .es-rc #es-rc-content .es-shades__title span {
-    margin-left: 70px;
-  }
-  .es-rc #es-rc-content .es-shades__title::before {
-    content: url(./img/arrow-5.png);
-    position: absolute;
-    left: -120px;
-    bottom: -100px;
-    display: block;
-  }
-  .es-rc #es-rc-content .es-shades__ctn {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  .es-rc #es-rc-content .es-shades__ctn--0 {
-    background: #000;
-    min-height: 400px;
-    -webkit-clip-path: polygon(0 52%, 100% 0, 100% 99%, 0% 100%);
-            clip-path: polygon(0 52%, 100% 0, 100% 99%, 0% 100%);
-  }
-  .es-rc #es-rc-content .es-shades__ctn--1 {
-    background: rgb(129, 85, 74);
-    background: linear-gradient(90deg, rgb(129, 85, 74) 31%, rgb(174, 92, 140) 100%);
-  }
-  .es-rc #es-rc-content .es-shades__ctn--2 {
-    background: rgb(175, 81, 115);
-    background: linear-gradient(90deg, rgb(175, 81, 115) 31%, rgb(200, 12, 47) 100%);
-  }
-  .es-rc #es-rc-content .es-shades__ctn--3 {
-    background: rgb(242, 13, 34);
-    background: linear-gradient(90deg, rgb(242, 13, 34) 31%, rgb(167, 79, 69) 100%);
-  }
-  .es-rc #es-rc-content .es-shades__ctn--4 {
-    background: rgb(152, 89, 72);
-    background: linear-gradient(90deg, rgb(152, 89, 72) 31%, rgb(162, 109, 95) 100%);
-  }
-  .es-rc #es-rc-content .es-shades__single {
-    width: 150px;
-    margin: 0;
-    height: 370px;
-  }
-  .es-rc #es-rc-content .es-shades__single--0 {
-    display: none;
-  }
-  .es-rc #es-rc-content .es-shades__name {
-    font-size: 11px;
-  }
-  .es-rc #es-rc-content .es-shades__prdctCtn--0 {
-    height: 0%;
-    width: 0%;
-  }
   .es-rc #es-rc-content .es-cross {
     padding: 20px;
     background: rgb(147, 204, 231);
@@ -632,46 +348,5 @@ body {
   .es-rc #es-rc-content .es-cross__link:hover {
     background-color: transparent;
     outline: 4px solid #e0219a;
-  }
-}
-@media (min-width: 910px) {
-  #es-nyx.es-nyx .es-shades {
-    margin-top: -280px;
-  }
-  #es-nyx.es-nyx .es-shades__mainText {
-    position: absolute;
-    bottom: 50px;
-    right: 100px;
-  }
-  #es-nyx.es-nyx .es-shades__title {
-    font-family: "Water Brush", cursive;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    font-size: 50px;
-    font-weight: 400;
-    color: #fff;
-    position: relative;
-  }
-  #es-nyx.es-nyx .es-shades__title span {
-    margin-left: 70px;
-  }
-  #es-nyx.es-nyx .es-shades__title::before {
-    content: url(./img/arrow-5.png);
-    position: absolute;
-    left: -120px;
-    bottom: -100px;
-  }
-  #es-nyx.es-nyx .es-shades__ctn--0 {
-    background: rgb(129, 85, 74);
-    background: linear-gradient(90deg, rgb(129, 85, 74) 31%, rgb(174, 92, 140) 100%);
-    display: flex;
-    -webkit-clip-path: polygon(0 52%, 100% 0, 100% 99%, 0% 100%);
-            clip-path: polygon(0 52%, 100% 0, 100% 99%, 0% 100%);
-  }
-  #es-nyx.es-nyx .es-shades__single--0 {
-    display: block;
-  }
-  #es-nyx.es-nyx .es-shades__prdctCtn--0 {
-    height: 100%;
-    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
