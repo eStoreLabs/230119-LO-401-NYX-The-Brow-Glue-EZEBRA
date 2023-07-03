@@ -1,69 +1,105 @@
-html,
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Square Peg', cursive;
+*/
 body {
   margin: 0;
   padding: 0;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-#es-nyx.es-nyx {
-  font-size: 16px;
+.es-rc #es-rc-content {
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Roboto:wght@400;900&family=Square+Peg&display=swap");
+  font-family: "Roboto", sans-serif;
+  font-size: 100%;
   line-height: 1.2;
   max-width: 990px;
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
+  background: rgb(37, 86, 164);
+  background: linear-gradient(66deg, rgb(37, 86, 164) 0%, rgb(74, 166, 209) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2556a4", endColorstr="#4aa6d1", GradientType=1);
 }
-#es-nyx.es-nyx img {
+.es-rc #es-rc-content * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.es-rc #es-rc-content img {
   max-width: 100%;
 }
-#es-nyx.es-nyx .es-kv {
-  min-height: 600px;
-  background-image: url(./img/kv-bg.png);
-  background-position: center;
+.es-rc #es-rc-content .es-header {
+  text-transform: uppercase;
+  color: #FFF;
+  margin: 0;
+}
+.es-rc #es-rc-content .es-outline {
+  color: transparent;
+  font-kerning: normal;
+  letter-spacing: 0.05em;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffffff;
+  -webkit-text-fill-color: transparent;
+}
+.es-rc #es-rc-content .es-kv {
+  min-height: 300px;
+  background-image: url("./img/bg-kv.png");
+  background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-#es-nyx.es-nyx .es-kv__single {
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  padding: 0px 20px;
-  margin: 20px;
-  font-size: 16px;
-  position: relative;
+.es-rc #es-rc-content .es-kv__textCtn {
+  padding: 1rem;
 }
-#es-nyx.es-nyx .es-kv__newness {
-  font-family: "Water Brush", cursive;
-  transform: rotate(-20deg);
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  font-size: 50px;
-  font-weight: 400;
-  display: block;
-  position: absolute;
-  left: -20px;
-  top: -100px;
+.es-rc #es-rc-content .es-kv__header {
+  font-size: 1.5rem;
 }
-#es-nyx.es-nyx .es-kv__text {
-  padding: 8px;
+@media (min-width: 700px) {
+  .es-rc #es-rc-content .es-kv {
+    min-height: 400px;
+  }
+  .es-rc #es-rc-content .es-kv__header {
+    font-size: 2.5rem;
+  }
 }
-#es-nyx.es-nyx .es-logo {
-  background-color: #000;
+.es-rc #es-rc-content .es-logo {
+  background-color: #2659a5;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  gap: 1rem;
+  padding: 2rem;
 }
-#es-nyx.es-nyx .es-info {
+.es-rc #es-rc-content .es-logo__left {
+  max-width: 80%;
+}
+.es-rc #es-rc-content .es-logo__right {
+  max-width: 80%;
+}
+@media (min-width: 400px) {
+  .es-rc #es-rc-content .es-logo__left {
+    max-width: 50%;
+  }
+  .es-rc #es-rc-content .es-logo__right {
+    max-width: 50%;
+  }
+}
+@media (min-width: 500px) {
+  .es-rc #es-rc-content .es-logo {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .es-rc #es-rc-content .es-logo__left {
+    max-width: 40%;
+  }
+  .es-rc #es-rc-content .es-logo__right {
+    max-width: 40%;
+  }
+}
+.es-rc #es-rc-content .es-info {
   min-height: 650px;
   background-image: url(./img/info-bg.png);
   background-position: center;
@@ -72,84 +108,84 @@ body {
   z-index: 2;
   position: relative;
 }
-#es-nyx.es-nyx .es-info__ctn {
+.es-rc #es-rc-content .es-info__ctn {
   max-width: 300px;
   background-color: #000;
   color: #fff;
 }
-#es-nyx.es-nyx .es-info__ctnList {
+.es-rc #es-rc-content .es-info__ctnList {
   margin: 20px;
   padding: 40px;
 }
-#es-nyx.es-nyx .es-info__listItem {
+.es-rc #es-rc-content .es-info__listItem {
   margin: 20px 0;
   list-style: none;
   position: relative;
 }
-#es-nyx.es-nyx .es-info__listItem::before {
+.es-rc #es-rc-content .es-info__listItem::before {
   content: url(./img/tick.png);
   position: absolute;
   left: -50px;
 }
-#es-nyx.es-nyx .es-ingr {
+.es-rc #es-rc-content .es-ingr {
   margin-top: -350px;
   min-height: 400px;
   z-index: 1;
   position: relative;
   background-color: #d1113f;
 }
-#es-nyx.es-nyx .es-ingr__ctn {
+.es-rc #es-rc-content .es-ingr__ctn {
   position: absolute;
   z-index: 2;
   bottom: 16%;
   right: 10%;
 }
-#es-nyx.es-nyx .es-ingr__text {
+.es-rc #es-rc-content .es-ingr__text {
   color: #fff;
   font-family: "Water Brush", cursive;
   font-size: 20px;
   font-weight: 400;
 }
-#es-nyx.es-nyx .es-shades {
+.es-rc #es-rc-content .es-shades {
   margin-top: -50px;
   z-index: 2;
   position: relative;
 }
-#es-nyx.es-nyx .es-shades__ctn {
+.es-rc #es-rc-content .es-shades__ctn {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-#es-nyx.es-nyx .es-shades__ctn--0 {
+.es-rc #es-rc-content .es-shades__ctn--0 {
   background: #000;
   min-height: 200px;
   -webkit-clip-path: none;
           clip-path: none;
 }
-#es-nyx.es-nyx .es-shades__ctn--1 {
+.es-rc #es-rc-content .es-shades__ctn--1 {
   background: transparent;
   margin-top: -18px;
 }
-#es-nyx.es-nyx .es-shades__ctn--2 {
+.es-rc #es-rc-content .es-shades__ctn--2 {
   background: transparent;
   margin-top: -4px;
 }
-#es-nyx.es-nyx .es-shades__ctn--3 {
+.es-rc #es-rc-content .es-shades__ctn--3 {
   background: transparent;
   margin-top: -4px;
 }
-#es-nyx.es-nyx .es-shades__ctn--4 {
+.es-rc #es-rc-content .es-shades__ctn--4 {
   background: transparent;
   margin-top: -4px;
 }
-#es-nyx.es-nyx .es-shades__mainText {
+.es-rc #es-rc-content .es-shades__mainText {
   position: absolute;
   bottom: 0px;
   right: 80px;
 }
-#es-nyx.es-nyx .es-shades__title {
+.es-rc #es-rc-content .es-shades__title {
   font-family: "Water Brush", cursive;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-size: 50px;
@@ -157,106 +193,106 @@ body {
   color: #fff;
   position: relative;
 }
-#es-nyx.es-nyx .es-shades__title span {
+.es-rc #es-rc-content .es-shades__title span {
   margin-left: 70px;
 }
-#es-nyx.es-nyx .es-shades__title::before {
+.es-rc #es-rc-content .es-shades__title::before {
   content: url(./img/arrow-5.png);
   position: absolute;
   left: -120px;
   bottom: -100px;
   display: none;
 }
-#es-nyx.es-nyx .es-shades__single {
+.es-rc #es-rc-content .es-shades__single {
   width: 120px;
   margin: 0;
   height: 335px;
 }
-#es-nyx.es-nyx .es-shades__single--0 {
+.es-rc #es-rc-content .es-shades__single--0 {
   display: none;
 }
-#es-nyx.es-nyx .es-shades__prdctCtn--onesieFunsie {
+.es-rc #es-rc-content .es-shades__prdctCtn--onesieFunsie {
   background-color: #af5173;
 }
-#es-nyx.es-nyx .es-shades__prdctCtn--threadCount {
+.es-rc #es-rc-content .es-shades__prdctCtn--threadCount {
   background-color: #78504e;
 }
-#es-nyx.es-nyx .es-shades__prdctCtn--feelings {
+.es-rc #es-rc-content .es-shades__prdctCtn--feelings {
   background-color: #00303c;
 }
-#es-nyx.es-nyx .es-shades__prdctCtn--chocolateMousse {
+.es-rc #es-rc-content .es-shades__prdctCtn--chocolateMousse {
   background-color: #751b34;
 }
-#es-nyx.es-nyx .es-shades__prdctCtn--velvetRobe {
+.es-rc #es-rc-content .es-shades__prdctCtn--velvetRobe {
   background-color: #962b35;
 }
-#es-nyx.es-nyx .es-shades__prdctCtn--cherryCreme {
+.es-rc #es-rc-content .es-shades__prdctCtn--cherryCreme {
   background-color: #c80c2f;
 }
-#es-nyx.es-nyx .es-shades__prdctCtn--icingOnTop {
+.es-rc #es-rc-content .es-shades__prdctCtn--icingOnTop {
   background-color: #f20d22;
 }
-#es-nyx.es-nyx .es-shades__prdctCtn--berryBedSheets {
+.es-rc #es-rc-content .es-shades__prdctCtn--berryBedSheets {
   background-color: #64214c;
 }
-#es-nyx.es-nyx .es-shades__prdctCtn--pillowFight {
+.es-rc #es-rc-content .es-shades__prdctCtn--pillowFight {
   background-color: #f4065b;
 }
-#es-nyx.es-nyx .es-shades__prdctCtn--bdayFrosting {
+.es-rc #es-rc-content .es-shades__prdctCtn--bdayFrosting {
   background-color: #ab1368;
 }
-#es-nyx.es-nyx .es-shades__prdctCtn--fuzzySlippers {
+.es-rc #es-rc-content .es-shades__prdctCtn--fuzzySlippers {
   background-color: #892a4a;
 }
-#es-nyx.es-nyx .es-shades__prdctCtn--pushinCushion {
+.es-rc #es-rc-content .es-shades__prdctCtn--pushinCushion {
   background-color: #a74f45;
 }
-#es-nyx.es-nyx .es-shades__prdctCtn--fauxFur {
+.es-rc #es-rc-content .es-shades__prdctCtn--fauxFur {
   background-color: #985948;
 }
-#es-nyx.es-nyx .es-shades__prdctCtn--parfait {
+.es-rc #es-rc-content .es-shades__prdctCtn--parfait {
   background-color: #a34140;
 }
-#es-nyx.es-nyx .es-shades__prdctCtn--teddyFluff {
+.es-rc #es-rc-content .es-shades__prdctCtn--teddyFluff {
   background-color: #9e5a4f;
 }
-#es-nyx.es-nyx .es-shades__prdctCtn--latteFoam {
+.es-rc #es-rc-content .es-shades__prdctCtn--latteFoam {
   background-color: #8e4743;
 }
-#es-nyx.es-nyx .es-shades__prdctCtn--kittyBelly {
+.es-rc #es-rc-content .es-shades__prdctCtn--kittyBelly {
   background-color: #aa584d;
 }
-#es-nyx.es-nyx .es-shades__prdctCtn--pancakeStacks {
+.es-rc #es-rc-content .es-shades__prdctCtn--pancakeStacks {
   background-color: #a26d5f;
 }
-#es-nyx.es-nyx .es-shades__prdctCtn--memoryFoam {
+.es-rc #es-rc-content .es-shades__prdctCtn--memoryFoam {
   background-color: #81554a;
 }
-#es-nyx.es-nyx .es-shades__prdctCtn--laundryDay {
+.es-rc #es-rc-content .es-shades__prdctCtn--laundryDay {
   background-color: #b6736a;
 }
-#es-nyx.es-nyx .es-shades__prdctCtn--cheeks {
+.es-rc #es-rc-content .es-shades__prdctCtn--cheeks {
   background-color: #c97c72;
 }
-#es-nyx.es-nyx .es-shades__prdctCtn--blankie {
+.es-rc #es-rc-content .es-shades__prdctCtn--blankie {
   background-color: #47a9d6;
 }
-#es-nyx.es-nyx .es-shades__prdctCtn--pomPom {
+.es-rc #es-rc-content .es-shades__prdctCtn--pomPom {
   background-color: #d34098;
 }
-#es-nyx.es-nyx .es-shades__prdctCtn--snuggleSesh {
+.es-rc #es-rc-content .es-shades__prdctCtn--snuggleSesh {
   background-color: #ae5c8c;
 }
-#es-nyx.es-nyx .es-shades__prdct {
+.es-rc #es-rc-content .es-shades__prdct {
   display: block;
   margin: 0px auto;
   padding: 10px;
 }
-#es-nyx.es-nyx .es-shades__nameCtn {
+.es-rc #es-rc-content .es-shades__nameCtn {
   background-color: #000;
   margin: 0;
 }
-#es-nyx.es-nyx .es-shades__name {
+.es-rc #es-rc-content .es-shades__name {
   color: #fff;
   margin: 0;
   text-transform: uppercase;
@@ -264,30 +300,30 @@ body {
   padding: 5px 10px;
   font-size: 8px;
 }
-#es-nyx.es-nyx .es-shades__lipCtn {
+.es-rc #es-rc-content .es-shades__lipCtn {
   margin: 0;
   padding: 0;
 }
-#es-nyx.es-nyx .es-shades__lipImg {
+.es-rc #es-rc-content .es-shades__lipImg {
   margin: 0;
   padding: 0;
 }
-#es-nyx.es-nyx .es-cross {
+.es-rc #es-rc-content .es-cross {
   padding: 20px;
   background: rgb(147, 204, 231);
   background: radial-gradient(circle, rgb(147, 204, 231) 0%, rgb(71, 169, 214) 100%);
 }
-#es-nyx.es-nyx .es-cross__upperCtn {
+.es-rc #es-rc-content .es-cross__upperCtn {
   position: relative;
 }
-#es-nyx.es-nyx .es-cross__upperCtn::after {
+.es-rc #es-rc-content .es-cross__upperCtn::after {
   content: url(./img/arrow-4.png);
   position: absolute;
   left: 300px;
   bottom: -80px;
   display: none;
 }
-#es-nyx.es-nyx .es-cross__title {
+.es-rc #es-rc-content .es-cross__title {
   margin-left: 0px;
   color: #fff;
   font-family: "Water Brush", cursive;
@@ -295,30 +331,30 @@ body {
   font-weight: 400;
   text-shadow: 6px 0px 10px #000;
 }
-#es-nyx.es-nyx .es-cross__title--1 {
+.es-rc #es-rc-content .es-cross__title--1 {
   margin-left: 50px;
 }
-#es-nyx.es-nyx .es-cross__title--2 {
+.es-rc #es-rc-content .es-cross__title--2 {
   margin-left: 100px;
 }
-#es-nyx.es-nyx .es-cross__productsCtn {
+.es-rc #es-rc-content .es-cross__productsCtn {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-end;
 }
-#es-nyx.es-nyx .es-cross__single {
+.es-rc #es-rc-content .es-cross__single {
   max-width: 200px;
   margin: 10px;
 }
-#es-nyx.es-nyx .es-cross__imgCtn {
+.es-rc #es-rc-content .es-cross__imgCtn {
   padding: 20px;
 }
-#es-nyx.es-nyx .es-cross__img {
+.es-rc #es-rc-content .es-cross__img {
   margin: 0 auto;
   display: block;
 }
-#es-nyx.es-nyx .es-cross__nameCtn {
+.es-rc #es-rc-content .es-cross__nameCtn {
   background-color: #000;
   min-height: 50px;
   font-size: 12px;
@@ -327,22 +363,22 @@ body {
   align-items: center;
   padding: 5px;
 }
-#es-nyx.es-nyx .es-cross__name {
+.es-rc #es-rc-content .es-cross__name {
   color: #fff;
   text-transform: uppercase;
   text-align: center;
 }
-#es-nyx.es-nyx .es-cross__descCtn {
+.es-rc #es-rc-content .es-cross__descCtn {
   padding: 10px 0;
   min-height: 160px;
 }
-#es-nyx.es-nyx .es-cross__desc {
+.es-rc #es-rc-content .es-cross__desc {
   color: #fff;
   font-size: 12px;
   font-weight: 400;
   text-align: center;
 }
-#es-nyx.es-nyx .es-cross__link {
+.es-rc #es-rc-content .es-cross__link {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
@@ -355,81 +391,64 @@ body {
   display: block;
   margin: 0 auto;
 }
-#es-nyx.es-nyx .es-cross__link:hover {
+.es-rc #es-rc-content .es-cross__link:hover {
   background-color: transparent;
   outline: 4px solid #e0219a;
 }
-#es-nyx.es-nyx .es-footer {
+.es-rc #es-rc-content .es-footer {
   width: 100%;
   background-color: #000;
   padding: 20px;
 }
-#es-nyx.es-nyx .es-footer__logo {
+.es-rc #es-rc-content .es-footer__logo {
   margin: 0 auto;
   display: block;
 }
 
 @media (min-width: 790px) {
-  #es-nyx.es-nyx .es-kv__single {
-    font-size: 25px;
-  }
-  #es-nyx.es-nyx .es-kv__newness {
-    font-family: "Water Brush", cursive;
-    transform: rotate(-20deg);
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    font-size: 50px;
-    font-weight: 400;
-    display: block;
-    position: absolute;
-    left: -20px;
-    top: -60px;
-  }
-  #es-nyx.es-nyx .es-logo {
-    justify-content: space-between;
-  }
-  #es-nyx.es-nyx .es-info {
+  .es-rc #es-rc-content .es-info {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 30px;
   }
-  #es-nyx.es-nyx .es-info__ctn {
+  .es-rc #es-rc-content .es-info__ctn {
     max-width: 580px;
   }
-  #es-nyx.es-nyx .es-info__ctnList {
+  .es-rc #es-rc-content .es-info__ctnList {
     margin: 20px;
     padding: 20px 60px;
   }
-  #es-nyx.es-nyx .es-info__listItem {
+  .es-rc #es-rc-content .es-info__listItem {
     margin: 20px 0;
     list-style: none;
     position: relative;
   }
-  #es-nyx.es-nyx .es-info__listItem::before {
+  .es-rc #es-rc-content .es-info__listItem::before {
     content: url(./img/tick.png);
     position: absolute;
     left: -50px;
     top: -20px;
   }
-  #es-nyx.es-nyx .es-ingr {
+  .es-rc #es-rc-content .es-ingr {
     margin-top: -600px;
     min-height: 800px;
     z-index: 1;
   }
-  #es-nyx.es-nyx .es-ingr__ctn {
+  .es-rc #es-rc-content .es-ingr__ctn {
     position: absolute;
     z-index: 2;
     bottom: 25%;
     right: 15%;
   }
-  #es-nyx.es-nyx .es-ingr__text {
+  .es-rc #es-rc-content .es-ingr__text {
     color: #fff;
     font-family: "Water Brush", cursive;
     font-size: 45px;
     font-weight: 400;
     position: relative;
   }
-  #es-nyx.es-nyx .es-ingr__text--1::before {
+  .es-rc #es-rc-content .es-ingr__text--1::before {
     content: "";
     background-image: url(./img/arrow-1.png);
     background-size: 160px 90px;
@@ -440,7 +459,7 @@ body {
     bottom: -60px;
     filter: invert(1);
   }
-  #es-nyx.es-nyx .es-ingr__text--2::before {
+  .es-rc #es-rc-content .es-ingr__text--2::before {
     content: "";
     background-image: url(./img/arrow-2.png);
     background-size: 100px 50px;
@@ -451,7 +470,7 @@ body {
     bottom: -20px;
     filter: invert(1);
   }
-  #es-nyx.es-nyx .es-ingr__text--3::before {
+  .es-rc #es-rc-content .es-ingr__text--3::before {
     content: "";
     background-image: url(./img/arrow-3.png);
     background-size: 100px 60px;
@@ -462,15 +481,15 @@ body {
     bottom: -60px;
     filter: invert(1);
   }
-  #es-nyx.es-nyx .es-shades {
+  .es-rc #es-rc-content .es-shades {
     margin-top: -250px;
   }
-  #es-nyx.es-nyx .es-shades__mainText {
+  .es-rc #es-rc-content .es-shades__mainText {
     position: absolute;
     bottom: 50px;
     right: 100px;
   }
-  #es-nyx.es-nyx .es-shades__title {
+  .es-rc #es-rc-content .es-shades__title {
     font-family: "Water Brush", cursive;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-size: 50px;
@@ -478,71 +497,71 @@ body {
     color: #fff;
     position: relative;
   }
-  #es-nyx.es-nyx .es-shades__title span {
+  .es-rc #es-rc-content .es-shades__title span {
     margin-left: 70px;
   }
-  #es-nyx.es-nyx .es-shades__title::before {
+  .es-rc #es-rc-content .es-shades__title::before {
     content: url(./img/arrow-5.png);
     position: absolute;
     left: -120px;
     bottom: -100px;
     display: block;
   }
-  #es-nyx.es-nyx .es-shades__ctn {
+  .es-rc #es-rc-content .es-shades__ctn {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
-  #es-nyx.es-nyx .es-shades__ctn--0 {
+  .es-rc #es-rc-content .es-shades__ctn--0 {
     background: #000;
     min-height: 400px;
     -webkit-clip-path: polygon(0 52%, 100% 0, 100% 99%, 0% 100%);
             clip-path: polygon(0 52%, 100% 0, 100% 99%, 0% 100%);
   }
-  #es-nyx.es-nyx .es-shades__ctn--1 {
+  .es-rc #es-rc-content .es-shades__ctn--1 {
     background: rgb(129, 85, 74);
     background: linear-gradient(90deg, rgb(129, 85, 74) 31%, rgb(174, 92, 140) 100%);
   }
-  #es-nyx.es-nyx .es-shades__ctn--2 {
+  .es-rc #es-rc-content .es-shades__ctn--2 {
     background: rgb(175, 81, 115);
     background: linear-gradient(90deg, rgb(175, 81, 115) 31%, rgb(200, 12, 47) 100%);
   }
-  #es-nyx.es-nyx .es-shades__ctn--3 {
+  .es-rc #es-rc-content .es-shades__ctn--3 {
     background: rgb(242, 13, 34);
     background: linear-gradient(90deg, rgb(242, 13, 34) 31%, rgb(167, 79, 69) 100%);
   }
-  #es-nyx.es-nyx .es-shades__ctn--4 {
+  .es-rc #es-rc-content .es-shades__ctn--4 {
     background: rgb(152, 89, 72);
     background: linear-gradient(90deg, rgb(152, 89, 72) 31%, rgb(162, 109, 95) 100%);
   }
-  #es-nyx.es-nyx .es-shades__single {
+  .es-rc #es-rc-content .es-shades__single {
     width: 150px;
     margin: 0;
     height: 370px;
   }
-  #es-nyx.es-nyx .es-shades__single--0 {
+  .es-rc #es-rc-content .es-shades__single--0 {
     display: none;
   }
-  #es-nyx.es-nyx .es-shades__name {
+  .es-rc #es-rc-content .es-shades__name {
     font-size: 11px;
   }
-  #es-nyx.es-nyx .es-shades__prdctCtn--0 {
+  .es-rc #es-rc-content .es-shades__prdctCtn--0 {
     height: 0%;
     width: 0%;
   }
-  #es-nyx.es-nyx .es-cross {
+  .es-rc #es-rc-content .es-cross {
     padding: 20px;
     background: rgb(147, 204, 231);
     background: radial-gradient(circle, rgb(147, 204, 231) 0%, rgb(71, 169, 214) 100%);
   }
-  #es-nyx.es-nyx .es-cross__upperCtn {
+  .es-rc #es-rc-content .es-cross__upperCtn {
     position: relative;
   }
-  #es-nyx.es-nyx .es-cross__upperCtn::after {
+  .es-rc #es-rc-content .es-cross__upperCtn::after {
     display: block;
   }
-  #es-nyx.es-nyx .es-cross__title {
+  .es-rc #es-rc-content .es-cross__title {
     margin-left: 100px;
     color: #fff;
     font-family: "Water Brush", cursive;
@@ -550,30 +569,30 @@ body {
     font-weight: 400;
     text-shadow: 6px 0px 10px #000;
   }
-  #es-nyx.es-nyx .es-cross__title--1 {
+  .es-rc #es-rc-content .es-cross__title--1 {
     margin-left: 50px;
   }
-  #es-nyx.es-nyx .es-cross__title--2 {
+  .es-rc #es-rc-content .es-cross__title--2 {
     margin-left: 100px;
   }
-  #es-nyx.es-nyx .es-cross__productsCtn {
+  .es-rc #es-rc-content .es-cross__productsCtn {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
   }
-  #es-nyx.es-nyx .es-cross__single {
+  .es-rc #es-rc-content .es-cross__single {
     max-width: 200px;
     margin: 10px;
   }
-  #es-nyx.es-nyx .es-cross__imgCtn {
+  .es-rc #es-rc-content .es-cross__imgCtn {
     padding: 20px;
   }
-  #es-nyx.es-nyx .es-cross__img {
+  .es-rc #es-rc-content .es-cross__img {
     margin: 0 auto;
     display: block;
   }
-  #es-nyx.es-nyx .es-cross__nameCtn {
+  .es-rc #es-rc-content .es-cross__nameCtn {
     background-color: #000;
     min-height: 50px;
     font-size: 12px;
@@ -582,22 +601,22 @@ body {
     align-items: center;
     padding: 5px;
   }
-  #es-nyx.es-nyx .es-cross__name {
+  .es-rc #es-rc-content .es-cross__name {
     color: #fff;
     text-transform: uppercase;
     text-align: center;
   }
-  #es-nyx.es-nyx .es-cross__descCtn {
+  .es-rc #es-rc-content .es-cross__descCtn {
     padding: 10px 0;
     min-height: 160px;
   }
-  #es-nyx.es-nyx .es-cross__desc {
+  .es-rc #es-rc-content .es-cross__desc {
     color: #fff;
     font-size: 12px;
     font-weight: 400;
     text-align: center;
   }
-  #es-nyx.es-nyx .es-cross__link {
+  .es-rc #es-rc-content .es-cross__link {
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
@@ -610,7 +629,7 @@ body {
     display: block;
     margin: 0 auto;
   }
-  #es-nyx.es-nyx .es-cross__link:hover {
+  .es-rc #es-rc-content .es-cross__link:hover {
     background-color: transparent;
     outline: 4px solid #e0219a;
   }
