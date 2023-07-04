@@ -1,8 +1,4 @@
-/*
-font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Square Peg', cursive;
-*/
+
 $es-blue: #2659a5;
 $es-pink: #fb1fa7;
 
@@ -482,7 +478,16 @@ body {
         padding: 1rem;
         background: rgb(147, 204, 231);
         background: radial-gradient(circle, rgba(147, 204, 231, 1) 0%, rgba(71, 169, 214, 1) 100%);
-
+        &__header {
+            text-align: center;
+        }
+        &__pill {
+            border-radius: 99px;
+            outline: 2px solid #fff;
+            color: white;
+            text-transform: uppercase;
+            
+        }
         &__upperCtn {
             
         }
