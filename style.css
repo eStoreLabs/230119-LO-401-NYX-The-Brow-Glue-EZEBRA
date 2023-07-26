@@ -30,7 +30,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 100%;
   line-height: 1.2;
-  max-width: 990px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
@@ -243,6 +243,11 @@ body {
   justify-content: center;
   padding: 2rem;
   gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+.es-rc #es-rc-content .es-shadesCtn a {
+  text-decoration: none;
 }
 .es-rc #es-rc-content .es-shades__single {
   display: flex;
@@ -279,6 +284,8 @@ body {
   }
   .es-rc #es-rc-content .es-shades__header {
     font-size: 3rem;
+    text-align: right;
+    margin-right: 2rem;
   }
   .es-rc #es-rc-content .es-shades__header--2 {
     font-size: 3rem;
@@ -354,10 +361,10 @@ body {
   position: relative;
 }
 .es-rc #es-rc-content .es-features__feature--txt--1 {
-  animation: es-pulse-L 4s ease-in-out 0s infinite normal forwards;
+  animation: es-pulse-L 6s ease-in-out 0s infinite normal forwards;
 }
 .es-rc #es-rc-content .es-features__feature--txt--2 {
-  animation: es-pulse-R 4s ease-in-out 2s infinite normal forwards;
+  animation: es-pulse-R 6s ease-in-out 3s infinite normal forwards;
 }
 .es-rc #es-rc-content .es-features__feature--txt--1:after {
   content: url("./img/arrow-1.png");
@@ -516,6 +523,12 @@ body {
 .es-rc #es-rc-content .es-cross__single:hover .es-cross__link {
   background-color: transparent;
   outline: 4px solid #e0219a;
+}
+@media (min-width: 1000px) {
+  .es-rc #es-rc-content .es-cross__single {
+    max-width: 250px;
+    grid-template-rows: 350px 60px 150px 40px;
+  }
 }
 .es-rc #es-rc-content .es-cross__imgCtn {
   padding: 20px;

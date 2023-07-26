@@ -49,7 +49,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 100%;
   line-height: 1.2;
-  max-width: 990px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
@@ -334,6 +334,11 @@ body {
       justify-content: center;
       padding: 2rem;
       gap: 2rem;
+      position: relative;
+      z-index: 1;
+      a {
+        text-decoration: none;
+      }
     }
 
     &__single {
@@ -377,6 +382,8 @@ body {
 
       &__header {
         font-size: 3rem;
+        text-align: right;
+        margin-right: 2rem;
 
         &--2 {
           font-size: 3rem;
@@ -477,10 +484,10 @@ body {
     }
     &__feature--txt {
       &--1 {
-        animation: es-pulse-L 4s ease-in-out 0s infinite normal forwards;
+        animation: es-pulse-L 6s ease-in-out 0s infinite normal forwards;
       }
       &--2 {
-        animation: es-pulse-R 4s ease-in-out 2s infinite normal forwards;
+        animation: es-pulse-R 6s ease-in-out 3s infinite normal forwards;
       }
       &--1:after {
         content: url("./img/arrow-1.png");
@@ -675,6 +682,10 @@ body {
       &:hover .es-cross__link {
         background-color: transparent;
         outline: 4px solid #e0219a;
+      }
+      @media (min-width: 1000px) {
+        max-width: 250px;
+        grid-template-rows: 350px 60px 150px 40px;
       }
     }
 
